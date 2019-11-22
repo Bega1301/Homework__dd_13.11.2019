@@ -1,5 +1,7 @@
 public class LimitExeption extends Exception {
-    double remainingAmount;
+    private double remainingAmount;
+    private String message;
+
 
     public LimitExeption (String message, double remainingAccount) {
         super(message + " "+ remainingAccount);
